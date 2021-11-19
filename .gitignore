@@ -1,0 +1,11 @@
+data/NY_ebd_split_species/*
+data/sampling_data_NY_state_slim.csv
+data/checklist_data_NY_state.txt
+data/sampling_data_NY_state.txt
+
+data/checklist_data_NY_state_only.txt
+data/new_york_richness.csv
+
+*figures/
+*.png
+
