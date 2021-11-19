@@ -60,10 +60,11 @@ richness_may <- richness %>%
 	mutate(effort_hrs_sqrt = sqrt(effort_hrs)) %>%
 	mutate(effort_hrs_2 = effort_hrs^2) %>%
 	filter(year > 2001, year < 2021) %>%
-	mutate(year_seq = year - 2001)
+	mutate(year_seq = year - 2001) %>%
+	dplyr::select(number_of_species, effort_hrs, effort_hrs_sqrt, year_seq, observer_id)
 
 
-data_loc <- str_glue("{data_root}/richness_ny_processed_may.csv")
+data_loc <- str_glue("{data_root}/richness_ny_may.csv")
 write_csv(richness_may, data_loc)
 
 # --------------------------------------------------------------------
